@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+  integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Candila</h1>
+      <button class="hamburger-btn">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </button>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+      </ul>
+    </nav>
+    <div class="hero_section">
+      <div class="hero_section--textpart">
+        <div class="hero_section--textpart--title">
+          Slow Down with Candila
+        </div>
+        <div class="hero_section--textpart--paragraph">
+          In a fast world, some moments deserve a pause. Chill, take a breath,
+          and enjoy the warmth of Candila candles, made with years of
+          know-how.
+        </div>
+      </div>
+      <div class="hero_section--imgpart">
+        <img src="hero-candle.jpg" width="270" height="270" alt="candle image" />
+      </div>                        
+    </div>
+    <button class="hero_section--textpart--scrolling-btn"  onclick="location.href ='#main'">
+      Discover More
+              </button>
+            </header>
+  <main id="main" >
+    <section class="intro">
+      <p class="intro_textpart">
+        Since ancient times, candles have illuminated homes and hearts. At
+        Candila, we continue that tradition with natural, handmade warmth.
+      </p>
+      <figure class="intro_imgpart">
+        <img src="making-candles.jpg" width="200px" height="100px" alt="making candles" />
+        <figcaption>
+          A candle crafted from years of expertise, each telling its own
+          story.
+        </figcaption>
+      </figure>
+    </section>
+    <section class="about" id="about">
+      <div class="about_textpart">
+        <h2 class="about_textpart--title">
+          Pause, unwind, and light up your moment.
+        </h2>
+        <p class="about_textpart--paragraph">
+          At candila, every candle is made to bring you calm, warmth, and a
+          touch of beauty. Light one, slow down, and enjoy the gentle glow
+          that makes your day feel special
+        </p>
+      </div>
+      <div class="about_imgpart">
+        <img width="200" height="300" src="our-candles.jpg" alt="candles images " />
+        <div>
+    </section>
+    <section class="video-section">
+      <div class="video-container">
+        <video src="making-candle.mp4" width="100%" preload="auto"> </video>
+      </div>
+      <button class="play-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+          <path fill="#fff" d="M8 5v14l11-7z" />
+        </svg>
+      </button>
+      <p class="video-caption">Made by love</p>
+      <div class="video-sticker">Nature<span>Made</span></div>
+    </section>
+    <section class="products-section" id="products">
+      <h1>our products:</h1>
+      <p>Check out our top 4 products, best-sellers and newest goodies!
+        A new launch is coming soon stay tuned!</p>
+      <div class="products-container">
+        <div class="product">
+          <div class="product-img">
+            <img src="candel1.jpg" id="product-img" alt="candle 1" width="100%" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">
+              <h2>Don't Bug Me Candle
+              </h2>
+              <h3> Citronella-infused candle for a bug-free ambiance
+              </h3>
+            </div>
+            <div class="product-price--after-discount">
+              <h4>$18</h4>
+            </div>
+            <button class="product-btn product-btn--tocart">
+              <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="none"
+                  stroke-width="0.192"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                    stroke="#fffdf6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img">
+            <img src="candle2.jpg" id="product-img" alt="candel2" width="100%" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">
+              <h2>Scentir Candle
+              </h2>
+              <h3> Rose Petal Candle with a floral rose scent
+                petals
+              </h3>
+            </div>
+            <div class="product-price--after-discount">
+              <h4>$25</h4>
+            </div>
+            <button class="product-btn product-btn--tocart">
+              <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="none"
+                  stroke-width="0.192"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                    stroke="#fffdf6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img">
+            <img src="candle3.jpg" id="product-img" alt="candle 3" width="100%" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">
+              <h2>Citrus Spice Candle</h2>
+              <h3>Aromatic candle with orange and cinnamon scents</h3>
+            </div>
+            <div class="product-price--after-discount">
+              <h4>$20</h4>
+            </div>
+            <button class="product-btn product-btn--tocart">
+              <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="none"
+                  stroke-width="0.192"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                    stroke="#fffdf6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img">
+            <img src="candle4.jpg" id="product-img" alt="candle 4" width="100%" />
+          </div>
+          <div class="product-info">
+            <div class="product-name">
+              <h2>Rustic Wooden Candle</h2>
+              <h3>Handcrafted wooden style candle with a warm glow</h3>
+            </div>
+            <div class="product-price--after-discount">
+              <h4>$15</h4>
+            </div>
+            <button class="product-btn product-btn--tocart">
+              <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="none"
+                  stroke-width="0.192"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                    stroke="#fffdf6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-banner-container">
+    <div class="topbanner-section">
+      <p class="banner-paragraph">🕯️Made with passion, Light up the momment 🕯️Made with passion,Light up the momment 🕯️Made with passion,Light up the momment 🕯️Made with passion,Light up the momment🕯️</p>
+      <p class="banner-paragraph">🕯️Made with passion, Light up the momment 🕯️Made with passion,Light up the momment 🕯️Made with passion,Light up the momment 🕯️Made with passion,Light up the momment🕯️</p>
+    </div>
+    </section>
+  
+    <section class="reviews-section" id="reviews">
+      <h1>Some Review</h1>
+      <p>We value every piece of feedback from our customers.
+        Here’s what they say about their experience with us:
+      </p>
+      <div class="review-container">
+        <div class="reviews-part1">
+          <div class="review">
+            <div class="review-img"><img src="images faces/boy1.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">Ahmed Nour</h2>
+              <h3 class="review-info--the-review">Great candle, love the wooden design! Highly recommend.</h3>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-img"><img src="images faces/girl1.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">just maria</h2>
+              <h3 class="review-info--the-review">The citrus scent is refreshing and long-lasting.</h3>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-img"><img src="images faces/boy2.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">Omar Khaled </h2>
+              <h3 class="review-info--the-review">Love the wooden texture, very unique.</h3>
+            </div>
+          </div>
+
+        </div>
+        <div class="reviews-part2">
+          <div class="review">
+            <div class="review-img"><img src="images faces/girl2.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">Rewan ismail</h2>
+              <h3 class="review-info--the-review">Love the wooden texture, it brings a warm charm to my
+                room, and the gentle scent makes my evenings cozier. Highly recommend for a rustic touch!.</h3>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="review-img"><img src="images faces/boy3.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">john1811</h2>
+              <h3 class="review-info--the-review">Good quality, but the burn time could be longer.</h3>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-img"><img src="images faces/boy4.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">Youssef_Mostafa11</h2>
+              <h3 class="review-info--the-review">Nice design, works well to keep bugs away.</h3>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-part3">
+          <div class="review">
+            <div class="review-img"><img src="images faces/girl3.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">sara_mohamed22</h2>
+              <h3 class="review-info--the-review">Beautiful rose candle, adds a romantic vibe!</h3>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-img"><img src="images faces/girl4.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">Nour_salah80</h2>
+              <h3 class="review-info--the-review">Excellent product, will buy again.</h3>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-img"><img src="images faces/boy5.jpg" alt="review 1" width="100%">
+            </div>
+            <div class="review-info">
+              <h2 class="review-info--reviewer-name">just-Kareem </h2>
+              <h3 class="review-info--the-review">Amazing scent, perfect for relaxing evenings.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-images">
+        <img src="candle5.jpg" alt="Candle 1" width="300px" >
+        <img src="candle6.jpg" alt="Candle 2" width="300px">
+        <img src="candle7.jpg" alt="Candle 3" width="300px">
+                <img src="candle8.jpg" alt="Candle 4" width="300px">
+      </div>
+      <div class="footer-follow">
+        <p>FOLLOW US ON<br>
+          <br>INSTAGRAM</p>
+      </div>
+    </div>
+    <div class="footer-main">
+    
+        <h2>Candlia
+      </h2>
+      <div class="footer-right">
+        <nav>
+          <a href="#about">ABOUT</a>
+          <a href="#products">Products</a>
+          <a href="#reviews">REVIEWS</a>
+          <a href="#footer">SOCIAL</a>
+        </nav>
+      </div>
+    </div>
+
+      <div class="footer-left">
+          <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+          <p>By subscribing to our newsletter, you will receive the latest tips and updates about our products.</p>
+        <form>
+          <fieldset class="email-field">
+            <input type="email" placeholder="Enter your email address" required />
+            <button class="btn">
+              Send<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </fieldset>
+        </form>
+      </div>
+                <div class="footer-links">
+                      <a href="#">PRIVACY</a>
+                            <a href="#">TERMS</a>
+                                  <a href="#">ACCESSIBILITY</a>
+                                      </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

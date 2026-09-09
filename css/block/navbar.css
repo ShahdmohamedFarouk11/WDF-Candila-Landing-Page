@@ -1,0 +1,125 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+  position: relative;
+}
+  .logo {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: var(--text-color);
+    transition: var(--transition);
+
+    &:hover {
+      letter-spacing: 10px;
+    }
+  }
+
+
+    .nav-item {
+      list-style: none;
+    }
+      .nav-link {
+        text-decoration: none;
+        color: var(--text-color);
+        font-family: var(--secondary-font);
+        font-size: 22px;
+        padding: 7px 10px;
+        font-weight: 400;
+        position: relative;
+        display: inline-block;
+        width: max-content;
+        transition: var(--transition);
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+
+        &::before {
+          content: "";
+          border-bottom: 5px solid var(--primary-color);
+          border-radius: 3px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          opacity: 0;
+          transition: var(--transition);
+        }
+
+        &:hover::before {
+          opacity: 1;
+          margin-bottom: 2px;
+        }
+      }
+
+.hamburger-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 15px;
+  border: none;
+  z-index: 10;
+}
+.hamburger-bar {
+  width:35px;
+  padding: 3px;
+  background-color: var(--primary-color);
+  border-radius: 888px;
+  transition: var(--transition);
+}
+
+.hamburger-btn--active .hamburger-bar{
+&:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+&:nth-child(2) {
+  opacity: 0;
+}
+&:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+}
+
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1000px) {
+  .hamburger-btn {
+    display: flex;
+  }
+  .nav-list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right:-200%; 
+    width:100%;
+    min-width: 300px;
+    height: 100%;
+    background-color: var(--bg-hero-section);
+    padding-top: 80px;
+    padding-left: 50px;
+   align-items: start;
+   box-shadow: -5px 5px 7px rgba(0, 0, 0, .3);
+   z-index: 6;
+   transition: var(--transition);
+  }
+  .nav-item{
+    width: 100%;
+  }
+  .nav-link{
+    width: max-content;
+    font-size: 30px;
+  }  
+.nav-list--active {
+  right: 0%; 
+}
+}

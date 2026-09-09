@@ -1,0 +1,14 @@
+:root {
+  --bg: #f1f1f1;
+  --bg-hero-section: #bc9999;
+  --primary-color: #765255;
+  --text-color: #2c1f20;
+  --text-color2: #9b6e72;
+  --shade-of-color2: #a57d81;
+  --text-color3: #fff2eb;
+  --secondary-color: #855c60;
+  --card-bg: #fbfbfb;
+  --transition: all 0.3s ;
+  --primary-font: "Bowlby One", sans-serif;
+  --secondary-font: "Oswald", sans-serif;
+}

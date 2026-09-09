@@ -1,0 +1,58 @@
+.intro {
+  padding: 10px 0;
+  text-align: start;
+  position: relative;
+  min-height: 400px;
+  margin: 30px auto;
+}
+
+.intro_textpart {
+  font-family: var(--primary-font);
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 1.57px;
+  line-height: 1.6;
+  text-align: start;
+  color: var(--text-color2);
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 5px 15px;
+  width: 75%;
+  position: relative;
+  z-index: 2;
+}
+
+.intro_imgpart {
+  position: absolute;
+  bottom: 35px;
+    right: 15px; 
+  max-width: 360px;
+  text-align: right;
+}
+
+.intro_imgpart img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro_imgpart figcaption {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+}
+@media (max-width: 720px){
+  .intro{
+    display: flex;
+    flex-direction: column;
+  }
+  .intro_textpart{
+    font-size:20px;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    width: 100%;
+  }
+}
